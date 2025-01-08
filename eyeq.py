@@ -51,8 +51,8 @@ def gfilt(x: np.ndarray, s: float) -> np.ndarray:
 
 def dog(x: np.ndarray, a: float, b: float) -> np.ndarray:
     '''returns Difference of Gaussians (DoG) on array x, between kernel sizes a  and b'''
-    assert ((isinstance(a, int) or isinstance(a, float)) and s > 0), 'a must be number larger that 0'
-    assert ((isinstance(b, int) or isinstance(b, float)) and s > 0), 'b must be number larger that 0'
+    assert ((isinstance(a, int) or isinstance(a, float))), 'a must be number larger that 0'
+    assert ((isinstance(b, int) or isinstance(b, float))), 'b must be number larger that 0'
     return gfilt(x, a) - gfilt(x, b)
 
 
