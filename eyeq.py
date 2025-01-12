@@ -20,7 +20,7 @@ from matplotlib import pyplot as plt
 from matplotlib.pyplot import Normalize
 from pandas import DataFrame as Df
 from pandas import Series as Ser
-from PIL import Image
+from PIL import Image, ImageTk
 from PIL.ImageTk import PhotoImage
 from scipy.ndimage import grey_dilation as g_dil
 from tqdm.auto import tqdm
